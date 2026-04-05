@@ -17,47 +17,54 @@ export function SiteBrand({
   inverse?: boolean;
 }) {
   const [logoFailed, setLogoFailed] = useState(false);
+  const showLogo = !logoFailed;
 
   return (
-    <Link href="/" className={cn("group flex min-w-0 items-center gap-3", className)}>
-      <div
-        className={cn(
-          "relative flex shrink-0 items-center justify-center overflow-hidden rounded-2xl bg-white shadow-[0_14px_34px_rgba(26,79,189,0.14)] ring-1 ring-[rgba(18,48,84,0.08)]",
-          compact ? "h-11 w-11" : "h-12 w-12",
-          logoFailed && "bg-[var(--primary)] text-white",
-        )}
-      >
-        {!logoFailed ? (
+    <Link
+      href="/"
+      aria-label="SwissPro Allround Service GmbH Startseite"
+      className={cn("group flex min-w-0 items-center", className)}
+    >
+      {showLogo ? (
+        <div
+          className={cn(
+            "relative shrink-0",
+            compact ? "h-7 w-[8.85rem]" : "h-8 w-[9.75rem] sm:h-9 sm:w-[11rem]",
+          )}
+        >
           <Image
             src={siteMedia.logo.src}
             alt={siteMedia.logo.alt}
             fill
-            sizes="48px"
-            className="object-cover"
+            priority={inverse}
+            sizes={compact ? "142px" : "(max-width: 640px) 156px, 176px"}
+            className={cn(
+              "object-contain object-left",
+              inverse && "drop-shadow-[0_8px_24px_rgba(0,0,0,0.32)]",
+            )}
             onError={() => setLogoFailed(true)}
           />
-        ) : (
-          <span className="text-lg font-black tracking-[0.16em]">SP</span>
-        )}
-      </div>
-      <div className="min-w-0">
+        </div>
+      ) : (
         <div
           className={cn(
-            "truncate text-sm font-semibold uppercase tracking-[0.22em]",
-            inverse ? "text-white" : "text-[var(--primary)]",
+            "flex items-center gap-3",
+            inverse ? "text-white" : "text-[var(--foreground)]",
           )}
         >
-          SwissPro
+          <span
+            className={cn(
+              "flex h-9 w-9 items-center justify-center rounded-full text-sm font-black tracking-[0.16em]",
+              inverse ? "bg-white/12 text-white" : "bg-[var(--primary)] text-white",
+            )}
+          >
+            SP
+          </span>
+          <span className="text-sm font-semibold uppercase tracking-[0.18em]">
+            SwissPro
+          </span>
         </div>
-        <div
-          className={cn(
-            "truncate text-sm",
-            inverse ? "text-white/78" : "text-[var(--muted)]",
-          )}
-        >
-          Allround Service GmbH
-        </div>
-      </div>
+      )}
     </Link>
   );
 }

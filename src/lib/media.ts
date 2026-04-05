@@ -2,7 +2,7 @@ import type { ServiceSlug } from "@/lib/site";
 
 export const siteMedia = {
   logo: {
-    src: "/images/logo/log.jpg",
+    src: "/images/logo/log.png",
     alt: "SwissPro Allround Service GmbH Logo",
   },
   hero: {

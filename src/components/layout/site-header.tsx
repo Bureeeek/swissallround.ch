@@ -49,11 +49,11 @@ export function SiteHeader() {
         className={cn(
           "inset-x-0 top-0 z-50",
           isHome
-            ? "absolute"
+            ? "absolute bg-[linear-gradient(180deg,rgba(7,15,30,0.72),rgba(7,15,30,0.34)_62%,rgba(7,15,30,0))]"
             : "sticky border-b border-white/40 bg-[rgba(245,248,253,0.88)] backdrop-blur-xl",
         )}
       >
-        <div className="mx-auto flex w-full max-w-[92rem] items-center justify-between gap-4 px-5 py-5 sm:px-6 lg:px-8">
+        <div className="mx-auto flex w-full max-w-[92rem] items-center justify-between gap-6 px-5 py-4 sm:px-6 lg:px-8">
           <SiteBrand inverse={isHome} />
 
           <nav className="hidden items-center gap-6 lg:flex">

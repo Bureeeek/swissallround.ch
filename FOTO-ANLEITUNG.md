@@ -5,7 +5,8 @@ Die Website ist so vorbereitet, dass Bilder automatisch erscheinen, sobald du si
 Wichtig:
 
 - Verwende exakt die unten stehenden Dateinamen.
-- Verwende am besten `jpg`.
+- Für das Logo verwende am besten ein transparentes `png`.
+- Für die restlichen Bilder verwende am besten `jpg`.
 - Nach dem Einfügen reicht ein Reload der Seite.
 - Wenn eine Datei fehlt, bleibt automatisch der vorhandene Platzhalter sichtbar.
 
@@ -22,11 +23,15 @@ Empfehlung:
 
 | Bereich | Datei | Pfad | Empfehlung |
 |---|---|---|---|
-| Logo | `log.jpg` | `public/images/logo/log.jpg` | ca. `600 x 600 px` |
+| Logo | `log.png` | `public/images/logo/log.png` | transparent, ideal ca. `1200 x 380 px` |
 | Home Hero | `hero-main.jpg` | `public/images/hero/hero-main.jpg` | ca. `2200 x 1400 px` |
 | Über Uns | `about-main.jpg` | `public/images/about/about-main.jpg` | ca. `1600 x 1200 px` |
 | Dienstleistungen Seite | `dienstleistungen-hero.jpg` | `public/images/pages/dienstleistungen-hero.jpg` | ca. `1600 x 1200 px` |
 | Galerie Seite | `galerie-hero.jpg` | `public/images/pages/galerie-hero.jpg` | ca. `1600 x 1200 px` |
+
+Hinweis:
+
+- Das Navbar-Logo wird direkt aus `public/images/logo/log.png` geladen.
 
 ## Dienstleistungsbilder
 
