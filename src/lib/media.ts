@@ -54,7 +54,7 @@ export const serviceMedia: Record<
   "gartenpflege-winterthur": {
     cardSrc: "/images/services/gartenpflege-winterthur/card.jpg",
     detailSrc: "/images/services/gartenpflege-winterthur/detail.jpg",
-    alt: "Gartenpflege in Winterthur",
+    alt: "Hauswartung in Winterthur",
   },
 };
 
@@ -79,7 +79,7 @@ export const galleryMedia: Record<
   },
   "gal-4": {
     src: "/images/gallery/gal-4.jpg",
-    alt: "Gartenunterhalt Projektfoto",
+    alt: "Hauswartung Projektfoto",
   },
   "gal-5": {
     src: "/images/gallery/gal-5.jpg",
@@ -123,7 +123,7 @@ export const beforeAfterMedia: Record<
   "before-after-3": {
     beforeSrc: "/images/before-after/03-before.jpg",
     afterSrc: "/images/before-after/03-after.jpg",
-    beforeAlt: "Vorher Bild Gartenunterhalt",
-    afterAlt: "Nachher Bild Gartenunterhalt",
+    beforeAlt: "Vorher Bild Hauswartung",
+    afterAlt: "Nachher Bild Hauswartung",
   },
 };

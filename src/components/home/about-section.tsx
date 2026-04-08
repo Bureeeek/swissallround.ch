@@ -12,7 +12,7 @@ export function AboutSection() {
           <SectionHeading
             eyebrow="Über SwissPro"
             title="Ein Ansprechpartner für Leistungen, die im Alltag zusammenfallen"
-            description="SwissPro ist dann stark, wenn Reinigung, Umzug, Räumung, Rückbau oder Gartenunterhalt nicht isoliert betrachtet werden sollen."
+            description="SwissPro ist dann stark, wenn Reinigung, Umzug, Räumung, Rückbau oder Hauswartung nicht isoliert betrachtet werden sollen."
           />
           <div className="space-y-5 text-base leading-8 text-[var(--muted)]">
             <p>

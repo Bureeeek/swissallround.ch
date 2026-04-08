@@ -6,7 +6,7 @@ import { formatPhoneHref } from "@/lib/utils";
 export const metadata = pageMetadata({
   title: "Kontakt",
   description:
-    "Kontaktieren Sie SwissPro Allround Service GmbH in Winterthur für Reinigung, Umzug, Räumung, Renovation oder Gartenpflege.",
+    "Kontaktieren Sie SwissPro Allround Service GmbH in Winterthur für Reinigung, Umzug, Räumung, Renovation oder Hauswartung.",
   path: "/kontakt",
 });
 

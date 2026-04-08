@@ -35,7 +35,7 @@ export const siteConfig = {
   defaultTitle:
     "SwissPro Allround Service GmbH – Reinigung, Umzug & Renovation in Winterthur",
   defaultDescription:
-    "Ihr zuverlässiger Partner für Gebäudereinigung, Umzug, Renovation und Gartenpflege in Winterthur und der Ostschweiz. Jetzt kostenlose Offerte anfragen!",
+    "Ihr zuverlässiger Partner für Gebäudereinigung, Umzug, Renovation und Hauswartung in Winterthur und der Ostschweiz. Jetzt kostenlose Offerte anfragen!",
   url: process.env.NEXT_PUBLIC_SITE_URL?.trim() || "https://www.swisspro-as.ch",
   email: "info@swisspro-as.ch",
   phones: ["052 229 50 90", "079 879 21 31"],
@@ -191,7 +191,7 @@ export const services: ServiceDetail[] = [
       {
         title: "Sinnvolle Kombinationen",
         description:
-          "Nach der Räumung können Reinigung, Rückbau oder Gartenarbeiten direkt anschliessen.",
+          "Nach der Räumung können Reinigung, Rückbau oder Hauswartung direkt anschliessen.",
       },
       {
         title: "Entlastung vor Übergaben",
@@ -264,35 +264,35 @@ export const services: ServiceDetail[] = [
   },
   {
     slug: "gartenpflege-winterthur",
-    name: "Gartenpflege",
-    shortName: "Gartenpflege",
+    name: "Hauswartung",
+    shortName: "Hauswartung",
     path: "/gartenpflege-winterthur",
-    metaTitle: "Gartenpflege in Winterthur | SwissPro Allround Service GmbH",
+    metaTitle: "Hauswartung in Winterthur | SwissPro Allround Service GmbH",
     metaDescription:
-      "Gartenpflege in Winterthur für Unterhalt, Rückschnitt und saisonale Arbeiten rund um Liegenschaften. SwissPro hält Aussenbereiche gepflegt und einsatzbereit.",
-    kicker: "Garten",
+      "Hauswartung in Winterthur für regelmässigen Unterhalt, Betreuung von Liegenschaften und koordinierte Serviceeinsätze rund ums Objekt.",
+    kicker: "Hauswartung",
     teaser:
-      "Gepflegte Aussenbereiche für Wohnhäuser, Mehrfamilienhäuser und kleinere Gewerbeliegenschaften.",
+      "Regelmässiger Objektunterhalt für Wohnhäuser, Mehrfamilienhäuser und kleinere Gewerbeliegenschaften mit klaren Abläufen und einer Ansprechperson.",
     intro: [
-      "SwissPro übernimmt Gartenpflege in Winterthur für regelmässigen Unterhalt, saisonale Einsätze und punktuelle Arbeiten rund um Liegenschaften.",
-      "Das ist besonders sinnvoll, wenn Aussenflächen zusammen mit Reinigung, Räumung oder kleineren Renovationsarbeiten betreut werden sollen. So entstehen innen und aussen abgestimmte Übergaben.",
+      "SwissPro übernimmt Hauswartung in Winterthur für regelmässigen Unterhalt, wiederkehrende Kontrollgänge und koordinierte Einsätze rund um Liegenschaften.",
+      "Besonders sinnvoll ist das, wenn Reinigung, Räumung, kleinere Unterhaltsarbeiten oder die Betreuung gemeinsamer Bereiche zusammenspielen sollen. So bleiben Abläufe für Eigentümer und Verwaltungen übersichtlich.",
     ],
     deliverables: [
-      "Regelmässiger Gartenunterhalt",
-      "Hecken-, Strauch- und Rückschnittarbeiten",
-      "Laub-, Grün- und Saisonarbeiten",
-      "Pflege von Wegen, Vorplätzen und Objektumfeld",
+      "Regelmässige Hauswartung und Kontrollgänge",
+      "Betreuung von Allgemeinflächen und Objektumfeld",
+      "Kleinere Unterhalts- und Koordinationsarbeiten",
+      "Kombinierbare Einsätze mit Reinigung, Räumung oder Renovation",
     ],
     benefits: [
       {
         title: "Gepflegter Gesamteindruck",
         description:
-          "Aussenbereiche wirken sauber, zugänglich und ordentlich unterhalten.",
+          "Liegenschaften wirken sauber, betreut und organisatorisch gut geführt.",
       },
       {
-        title: "Saisonale Entlastung",
+        title: "Weniger Abstimmung",
         description:
-          "Spitzen im Frühling, Sommer und Herbst lassen sich unkompliziert abdecken.",
+          "Wiederkehrende Aufgaben lassen sich über eine Stelle koordinieren.",
       },
       {
         title: "Praktisch für Verwaltungen und Eigentümer",
@@ -301,16 +301,16 @@ export const services: ServiceDetail[] = [
       },
     ],
     process: [
-      "Pflegebedarf und Rhythmus abstimmen",
-      "Objektumfeld und Zugang prüfen",
-      "Arbeiten saison- und flächengerecht durchführen",
+      "Betreuungsumfang und Rhythmus abstimmen",
+      "Liegenschaft, Zugänge und Zuständigkeiten prüfen",
+      "Hauswartung planbar und objektspezifisch durchführen",
     ],
     related: [
       "renovation-abbruch-winterthur",
       "gebaeudereinigung-winterthur",
       "raeumung-entsorgung-winterthur",
     ],
-    galleryLabel: "Garten",
+    galleryLabel: "Hauswartung",
   },
 ] as const;
 
@@ -331,7 +331,7 @@ export const galleryCategories = [
   "Umzug",
   "Räumung",
   "Renovation",
-  "Garten",
+  "Hauswartung",
 ] as const;
 
 export const galleryItems = [
@@ -355,9 +355,9 @@ export const galleryItems = [
   },
   {
     id: "gal-4",
-    category: "Garten",
-    title: "Gartenunterhalt",
-    description: "Pflege von Aussenbereichen rund um die Liegenschaft.",
+    category: "Hauswartung",
+    title: "Hauswartung bei Liegenschaften",
+    description: "Regelmässiger Unterhalt rund um Gebäude und Umfeld.",
   },
   {
     id: "gal-5",
@@ -379,9 +379,9 @@ export const galleryItems = [
   },
   {
     id: "gal-8",
-    category: "Garten",
-    title: "Saisonpflege im Garten",
-    description: "Unterhalt und Rückschnitt passend zur Jahreszeit.",
+    category: "Hauswartung",
+    title: "Objektunterhalt im Aussenbereich",
+    description: "Koordinierter Unterhalt passend zur Liegenschaft und Saison.",
   },
 ] as const;
 
@@ -398,8 +398,8 @@ export const beforeAfterSlides = [
   },
   {
     id: "before-after-3",
-    title: "Gartenunterhalt nach Saisonstart",
-    description: "Gepflegte Aussenbereiche für einen ordentlichen Gesamteindruck.",
+    title: "Hauswartung im Aussenbereich",
+    description: "Gepflegte Flächen und betreute Objektumgebung für einen ordentlichen Gesamteindruck.",
   },
 ] as const;
 
@@ -426,9 +426,9 @@ export const wizardOptions = {
       description: "Rückbau, Demontage oder vorbereitende Arbeiten",
     },
     {
-      value: "Gartenpflege",
-      label: "Garten",
-      description: "Unterhalt, Rückschnitt und Saisonarbeiten",
+      value: "Hauswartung",
+      label: "Hauswartung",
+      description: "Regelmässiger Unterhalt und Betreuung von Liegenschaften",
     },
     {
       value: "Anderes",

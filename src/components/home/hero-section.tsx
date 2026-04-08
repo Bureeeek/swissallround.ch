@@ -43,7 +43,7 @@ export function HeroSection() {
           </div>
           <p className="max-w-3xl text-base leading-8 text-white/84 sm:text-lg">
             Professionell. Termingerecht. Aus einer Hand. Reinigung, Umzug,
-            Räumung, Renovation und Gartenpflege für Winterthur, Zürich und die
+            Räumung, Renovation und Hauswartung für Winterthur, Zürich und die
             Ostschweiz.
           </p>
           <div className="flex flex-col gap-3 sm:flex-row">

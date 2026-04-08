@@ -29,7 +29,9 @@ export function SiteBrand({
         <div
           className={cn(
             "relative shrink-0",
-            compact ? "h-7 w-[8.85rem]" : "h-8 w-[9.75rem] sm:h-9 sm:w-[11rem]",
+            compact
+              ? "h-7 w-[8.85rem]"
+              : "h-8 w-[10.9rem] sm:h-9 sm:w-[12.5rem]",
           )}
         >
           <Image
@@ -39,8 +41,9 @@ export function SiteBrand({
             priority={inverse}
             sizes={compact ? "142px" : "(max-width: 640px) 156px, 176px"}
             className={cn(
-              "object-contain object-left",
-              inverse && "drop-shadow-[0_8px_24px_rgba(0,0,0,0.32)]",
+              "origin-left object-contain object-left scale-[1.08]",
+              inverse &&
+                "brightness-0 invert drop-shadow-[0_8px_24px_rgba(0,0,0,0.32)]",
             )}
             onError={() => setLogoFailed(true)}
           />

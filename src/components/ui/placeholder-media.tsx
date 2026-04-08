@@ -71,15 +71,15 @@ export function PlaceholderMedia({
           align === "start" && "justify-start pt-24",
         )}
       >
-        <div className="max-w-sm space-y-3">
-          <h3 className="text-xl font-semibold uppercase tracking-[0.06em] text-white sm:text-2xl">
+        <div className="max-w-sm">
+          <h3 className="mb-3 text-xl font-semibold uppercase tracking-[0.06em] text-white sm:text-2xl">
             {title}
           </h3>
           {hint ? (
             <p className="max-w-sm text-sm leading-6 text-white/80">{hint}</p>
           ) : null}
         </div>
-        {children ? <div className="mt-4">{children}</div> : null}
+        {children ? <div>{children}</div> : null}
       </div>
     </div>
   );

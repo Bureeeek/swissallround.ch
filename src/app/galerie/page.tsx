@@ -7,7 +7,7 @@ import { pageMetadata } from "@/lib/site";
 export const metadata = pageMetadata({
   title: "Galerie und Projektbeispiele",
   description:
-    "Galerie von SwissPro Allround Service GmbH mit Projektbildern aus Reinigung, Umzug, Räumung, Renovation und Gartenpflege.",
+    "Galerie von SwissPro Allround Service GmbH mit Projektbildern aus Reinigung, Umzug, Räumung, Renovation und Hauswartung.",
   path: "/galerie",
 });
 
@@ -25,7 +25,7 @@ export default function GalleryPage() {
             </h1>
             <p className="max-w-2xl text-base leading-8 text-white/78 sm:text-lg">
               Eine Auswahl an Bildern aus Reinigung, Umzug, Räumung, Renovation
-              und Gartenpflege. Über die Filter gelangen Sie direkt zum passenden
+              und Hauswartung. Über die Filter gelangen Sie direkt zum passenden
               Bereich.
             </p>
             <div className="flex flex-wrap gap-3">

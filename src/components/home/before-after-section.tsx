@@ -11,7 +11,7 @@ export function BeforeAfterSection() {
         <SectionHeading
           eyebrow="Unsere Arbeit spricht für sich"
           title="Vorher und nachher in einem direkten Vergleich"
-          description="Ein direkter visueller Vergleich ausgewählter Arbeiten aus Reinigung, Räumung und Gartenpflege."
+          description="Ein direkter visueller Vergleich ausgewählter Arbeiten aus Reinigung, Räumung und Hauswartung."
         />
         <div className="mt-10 grid gap-6 lg:grid-cols-3">
           {beforeAfterSlides.map((slide) => {

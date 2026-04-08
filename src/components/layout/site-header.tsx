@@ -85,7 +85,7 @@ export function SiteHeader() {
             <LinkButton
               href="/offerte"
               className={cn(
-                "font-display min-w-[10rem] uppercase tracking-[0.06em]",
+                "font-display min-w-[10rem] uppercase tracking-[0.06em] !text-white",
                 isHome &&
                   "!bg-[rgba(26,79,189,0.88)] !text-white ring-1 ring-white/24 shadow-none backdrop-blur hover:!bg-[rgba(26,79,189,0.98)]",
               )}

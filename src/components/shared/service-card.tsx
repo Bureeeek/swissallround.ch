@@ -5,7 +5,7 @@ import type { ServiceDetail } from "@/lib/site";
 
 export function ServiceCard({ service }: { service: ServiceDetail }) {
   return (
-    <article className="min-w-[17rem] snap-start">
+    <article className="min-w-[17rem] snap-start transition-transform duration-200 hover:scale-[1.02]">
       <PlaceholderMedia
         title={service.shortName}
         hint={service.teaser}
@@ -14,7 +14,7 @@ export function ServiceCard({ service }: { service: ServiceDetail }) {
         tone="dark"
         imageSrc={serviceMedia[service.slug].cardSrc}
       >
-        <LinkButton href={service.path} className="mt-4 w-fit">
+        <LinkButton href={service.path} className="mt-6 w-fit">
           Mehr dazu
         </LinkButton>
       </PlaceholderMedia>

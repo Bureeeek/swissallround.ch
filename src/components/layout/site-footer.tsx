@@ -12,7 +12,7 @@ export function SiteFooter() {
           <SiteBrand compact />
           <p className="max-w-md text-sm leading-7 text-[var(--muted)]">
             SwissPro kombiniert Reinigung, Umzug, Räumung, Renovation und
-            Gartenpflege für Eigentümer, Verwaltungen, Unternehmen und
+            Hauswartung für Eigentümer, Verwaltungen, Unternehmen und
             Privathaushalte in Winterthur, Zürich und der Ostschweiz.
           </p>
         </div>

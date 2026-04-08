@@ -62,15 +62,15 @@ function OptionCard({
       type="button"
       onClick={onClick}
       className={cn(
-        "group rounded-[1.6rem] border bg-white p-4 text-left transition-all duration-200 sm:p-5",
+        "group min-h-[120px] rounded-[1.6rem] bg-white p-5 text-left transition-all duration-200",
         selected
-          ? "border-[var(--primary)] shadow-[0_20px_45px_rgba(26,79,189,0.16)]"
-          : "border-[var(--border)] hover:border-[var(--primary)] hover:shadow-[0_14px_36px_rgba(12,41,98,0.08)]",
+          ? "border-2 border-blue-600 bg-blue-50 shadow-[0_20px_45px_rgba(26,79,189,0.16)]"
+          : "border border-gray-200 hover:border-blue-300 hover:shadow-[0_14px_36px_rgba(12,41,98,0.08)]",
       )}
     >
       <div
         className={cn(
-          "rounded-[1.3rem] px-4 py-5",
+          "flex min-h-[120px] flex-col justify-between rounded-[1.3rem] px-4 py-5",
           selected
             ? "bg-[linear-gradient(145deg,rgba(14,34,81,0.96),rgba(26,79,189,0.88))] text-white"
             : "bg-[linear-gradient(145deg,rgba(245,248,253,0.92),rgba(227,237,250,0.92))] text-[var(--foreground)]",
@@ -217,7 +217,7 @@ export function OfferteWizard() {
       <div className="space-y-4">
         <div className="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
           <div className="space-y-2">
-            <div className="text-sm font-semibold uppercase tracking-[0.22em] text-[var(--primary)]">
+            <div className="text-sm font-semibold uppercase tracking-widest text-blue-600">
               Schritt {step} von {stepContent.length}
             </div>
             <h2 className="text-2xl font-semibold text-[var(--foreground)] sm:text-3xl">
@@ -229,7 +229,7 @@ export function OfferteWizard() {
           </div>
         </div>
 
-        <div className="h-3 overflow-hidden rounded-full bg-[rgba(126,182,255,0.16)]">
+        <div className="h-1.5 overflow-hidden rounded-full bg-[rgba(126,182,255,0.16)]">
           <div
             className="h-full rounded-full bg-[linear-gradient(90deg,var(--primary),var(--accent))] transition-all duration-300"
             style={{ width: `${progress}%` }}
@@ -237,7 +237,7 @@ export function OfferteWizard() {
         </div>
       </div>
 
-      <div className="mt-8 space-y-6">
+      <div className="mt-6 space-y-6">
         {step === 1 ? (
           <>
             <div className="grid gap-4 md:grid-cols-2 xl:grid-cols-3">
@@ -453,16 +453,25 @@ export function OfferteWizard() {
             variant="secondary"
             onClick={goBack}
             disabled={step === 1 || isSubmitting}
+            className="min-h-[48px] w-full sm:w-auto"
           >
             Zurück
           </ActionButton>
 
           {step < stepContent.length ? (
-            <ActionButton type="button" onClick={goNext}>
+            <ActionButton
+              type="button"
+              onClick={goNext}
+              className="min-h-[48px] w-full sm:w-auto"
+            >
               Weiter
             </ActionButton>
           ) : (
-            <ActionButton type="submit" disabled={isSubmitting}>
+            <ActionButton
+              type="submit"
+              disabled={isSubmitting}
+              className="min-h-[48px] w-full sm:w-auto"
+            >
               {isSubmitting ? "Wird gesendet..." : "Offerte anfordern"}
             </ActionButton>
           )}

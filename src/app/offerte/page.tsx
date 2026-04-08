@@ -1,12 +1,11 @@
 import { OfferteWizard } from "@/components/offerte/offerte-wizard";
 import { LinkButton } from "@/components/ui/button";
-import { SectionHeading } from "@/components/ui/section-heading";
 import { pageMetadata, siteConfig } from "@/lib/site";
 
 export const metadata = pageMetadata({
   title: "Offerte anfragen",
   description:
-    "Kostenlose Offerte anfragen bei SwissPro Allround Service GmbH in Winterthur. Mehrstufiger Konfigurator für Reinigung, Umzug, Räumung, Renovation und Gartenpflege.",
+    "Kostenlose Offerte anfragen bei SwissPro Allround Service GmbH in Winterthur. Mehrstufiger Konfigurator für Reinigung, Umzug, Räumung, Renovation und Hauswartung.",
   path: "/offerte",
 });
 
@@ -55,11 +54,17 @@ export default function QuotePage() {
         <div className="mx-auto grid w-full max-w-7xl gap-8 lg:grid-cols-[1.08fr_0.92fr]">
           <OfferteWizard />
           <div className="space-y-6 rounded-[2rem] border border-[var(--border)] bg-[rgba(245,248,253,0.82)] p-6">
-            <SectionHeading
-              eyebrow="Warum dieser Ablauf?"
-              title="Nur die Angaben abfragen, die für eine sinnvolle Offerte nötig sind"
-              description="Keine unnötigen Pflichtfelder, keine Fantasiepreise und keine irreführenden Sofortversprechen."
-            />
+            <div className="max-w-3xl space-y-4">
+              <div className="inline-flex rounded-full border border-[rgba(26,79,189,0.16)] bg-[rgba(126,182,255,0.15)] px-3 py-1 text-xs font-semibold uppercase tracking-[0.24em] text-[var(--primary)]">
+                Warum dieser Ablauf?
+              </div>
+              <h2 className="text-balance text-3xl font-semibold uppercase leading-[1.05] tracking-[-0.03em] text-[var(--foreground)]">
+                Nur die Angaben abfragen, die für eine sinnvolle Offerte nötig sind
+              </h2>
+              <p className="text-pretty text-base leading-8 text-[var(--muted)]">
+                Keine unnötigen Pflichtfelder, keine Fantasiepreise und keine irreführenden Sofortversprechen.
+              </p>
+            </div>
             <div className="grid gap-4">
               {[
                 "Dienstleistung, Objektart und Fläche bilden die Grundlage für die erste Einschätzung.",

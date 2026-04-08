@@ -20,8 +20,16 @@ export function CtaSection() {
             </p>
           </div>
           <div className="flex flex-col gap-3 sm:flex-row sm:justify-end">
-            <LinkButton href="/offerte">Offerte anfragen</LinkButton>
-            <LinkButton href="/kontakt" variant="ghost">
+            <LinkButton
+              href="/offerte"
+              className="bg-[var(--primary)] text-white hover:bg-[var(--primary-dark)]"
+            >
+              Offerte anfragen
+            </LinkButton>
+            <LinkButton
+              href="/kontakt"
+              className="border border-white/40 bg-transparent text-white shadow-none hover:bg-white/10"
+            >
               Kontakt aufnehmen
             </LinkButton>
           </div>
